@@ -1,0 +1,12 @@
+import math
+a=int(input())
+b=int(input())
+c=int(input())
+if a+b<=c:
+    print('impossible')
+elif c==math.sqrt((a**2)+(b**2)):
+    print('right')
+elif ((a**2)+(b**2)-(c**2))/(2*a*b)>0:
+    print('acute')
+else:
+    print('obtuse')
